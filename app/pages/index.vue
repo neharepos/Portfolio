@@ -1,3 +1,3 @@
 <template>
-    <div>main/index</div>
+    <BlocksHero />
 </template>
