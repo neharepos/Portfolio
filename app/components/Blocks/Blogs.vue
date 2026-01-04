@@ -36,7 +36,7 @@ const blogData = [
     ></div>
 
     <!-- CENTERED CONTENT -->
-    <div class="relative z-10 mx-auto w-full max-w-4xl px-4 sm:px-8 lg:px-2">
+    <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8">
       
       <Heading
         heading="Blogs"
@@ -62,7 +62,7 @@ const blogData = [
         />
       </div>
 
-      <h3 class="mt-6 text-blue-500 cursor-pointer hover:underline">
+      <h3 class="mt-6 text-blue-500 sm:px-8 cursor-pointer hover:underline">
         View all →
       </h3>
 
