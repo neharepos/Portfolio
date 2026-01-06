@@ -13,7 +13,7 @@
                         <span class='p-2 inline-block ml-[2px] w-6 h-6 transition-transform duration-300 group-hover:translate-x-2'>&#8594;</span>
                     </a>
                     <div
-                        class="bg-white h-[2px] w-0 group-hover:w-full transition-all duration-500 group-hover:bg-blue-500"
+                        class="bg-white h-[2px] w-0 group-hover:w-full transition-all duration-500 group-hover:bg-zinc-700"
                     >
                     </div>
                 </div>

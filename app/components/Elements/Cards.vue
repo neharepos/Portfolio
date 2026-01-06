@@ -9,7 +9,7 @@ const cardRef = ref(null)
 </script>
 
 <template>
-  <div class="flex justify-center sm:px-4 md:px-5">
+  <div class="flex justify-center sm:px-4 md:px-5 ">
     <div
       class="
         w-full
@@ -19,7 +19,7 @@ const cardRef = ref(null)
         lg:max-w-full
         transition
         duration-300
-        hover:shadow-[0_0_15px_rgba(59,130,246,0.8)]
+        hover:bg-zinc-800
         bg-zinc-900
         backdrop-blur-md
         rounded-2xl
@@ -27,6 +27,7 @@ const cardRef = ref(null)
         cursor-pointer
         shadow-lg
         group
+        border-zinc-800 border-2
       "
     >
       <h2 class="font-bold text-lg sm:text-xl text-white font-poppins">
@@ -41,14 +42,7 @@ const cardRef = ref(null)
         {{ description }}
       </p>
 
-      <span class="inline-flex items-center text-blue-500 mt-4">
-        Read
-        <span
-          class="ml-1 transition-transform duration-300 group-hover:translate-x-2"
-        >
-          →
-        </span>
-      </span>
+      
     </div>
   </div>
 </template>
