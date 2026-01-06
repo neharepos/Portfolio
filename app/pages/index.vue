@@ -3,4 +3,5 @@
     <BlocksBlogs/>
     <BlocksWorks/>
     <BlocksProjects/>
+    <ElementsForm/>
 </template>
