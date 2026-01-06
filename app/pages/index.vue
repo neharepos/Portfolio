@@ -2,4 +2,5 @@
     <BlocksHero />
     <BlocksBlogs/>
     <BlocksWorks/>
+    <BlocksProjects/>
 </template>

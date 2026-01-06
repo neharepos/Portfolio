@@ -60,11 +60,11 @@ const extraCount = computed(() => {
         border-zinc-800 border-2
       "
     >
-      <h2 class="font-bold text-lg sm:text-xl text-white font-poppins">
+      <h2 class="font-bold text-lg sm:text-xl text-white font-poppins group-hover:text-emerald-400">
         {{ title }}
       </h2>
 
-      <h3 class="text-sm text-gray-400 mt-1">
+      <h3 class="text-sm mt-1 text-emerald-500">
         {{ date }}
       </h3>
 

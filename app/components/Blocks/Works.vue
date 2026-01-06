@@ -25,7 +25,7 @@ const blogData = [
 </script>
 
 <template>
-  <div class="bg-[#0a0a0a] -mt-24 md:-mt-22 lg:-mt-32">
+  <div class="bg-[#0a0a0a] -mt-2 sm:-mt-22 md:-mt-22 lg:-mt-32">
     <div>
         <div
       class="hidden md:block absolute inset-0 z-0 opacity-20 pointer-events-none"
