@@ -1,7 +1,13 @@
-<script>
-    
-
+<script setup>
+const scrollToForm = () => {
+  const element = document.getElementById('contact-form');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
+
+
 
 <template>
   <div class=" flex gap-4 md:justify-start md:ml-54 mt-5">
@@ -18,6 +24,7 @@
 
     <div class="p-1">
   <button
+  @click="scrollToForm"
     class="flex items-center gap-3 rounded-md px-4 py-1
            bg-white text-black border border-gray-600
            hover:bg-slate-900 hover:text-white transition"

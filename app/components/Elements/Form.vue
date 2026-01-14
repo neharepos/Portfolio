@@ -20,6 +20,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
+  <section id="contact-form">
   <div class="bg-[#0a0a0a] px-19 ">
   <div class="max-w-2xl mx-auto p-12 bg-[#0a0a0a] border-2  border-zinc-800  group-hover:w-full transition-all duration-500 rounded-2xl backdrop-blur-sm shadow-xl">
     <h2 class="text-3xl font-bold text-white mb-2 font-poppins">Get in touch</h2>
@@ -82,4 +83,5 @@ const handleSubmit = () => {
     </form>
   </div>
   </div>
+  </section>
 </template>
