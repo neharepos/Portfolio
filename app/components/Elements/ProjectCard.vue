@@ -8,7 +8,7 @@ const props = defineProps({
   role: String,
   duration: String,
   github: String,
-  live: String,
+  live: String
 });
 
 const tagColors = [
@@ -24,7 +24,7 @@ const tagColors = [
 <template>
   <div class="px-12 pb-1">
     <div
-      class="relative pl-10 pb-12 pt-4 pr-10 mb-6 group rounded border-zinc-800 border-2 hover:bg-zinc-900"
+      class="relative pl-4 pb-12 pt-4 pr-10 mb-4 group rounded border-zinc-800 border-2 hover:bg-zinc-900"
     >
       <div class="flex flex-col gap-2">
         <div

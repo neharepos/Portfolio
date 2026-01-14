@@ -20,7 +20,16 @@ const blogData = [
     endDate: "Feb 2025",
     description: "Useful Tailwind tricks to build responsive UIs faster.",
     skills: ["abcg", "gfdg", "yuia"]
-  }
+  }, 
+  {
+    company: "asdf",
+    role:"softwaredev",
+    location:"Patna",
+    startDate:"6 jun",
+    endDate: "Jan 2025",
+    description: "A beginner-friendly guide to Vue 3 and Composition API.",
+    skills: ["abc", "gfd", "yui"]
+  },
 ]
 </script>
 
@@ -48,6 +57,8 @@ const blogData = [
           :endDate="blog.endDate"
           :description="blog.description"
           :skills="blog.skills"
+          v-bind="work"
+          :isLast="index === blogData.length - 1"
         />
         </div>
     </div>

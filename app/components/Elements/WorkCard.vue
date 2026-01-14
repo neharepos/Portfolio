@@ -12,6 +12,7 @@ const props = defineProps({
     type: Array,
     default: () => [],
   },
+  isLast: Boolean,
 });
 
 const tagColors = [
@@ -29,9 +30,24 @@ const duration = computed(
 </script>
 
 <template>
-  <div class="px-12 pb-1">
+  <div class="relative px-12 pb-1">
     <div
-      class="relative pl-10 pb-4 pt-4 pr-10 border-2 group mt-2 border-zinc-800 mb-6 cursor-pointer shadow-lg rounded-2xl transition duration-300 hover:bg-zinc-900"
+      v-if="!isLast"
+      class="absolute left-7 top-10 h-full w-px bg-zinc-700"
+    ></div>
+    <div class="absolute left-5 top-5 z-10">
+      <span
+        class="flex items-center justify-center w-5 h-5 rounded-full bg-blue-600 border border-blue-400"
+      >
+        <span class="w-2 h-2 rounded-full bg-black"></span>
+      </span>
+    </div>
+
+    
+   
+
+    <div
+      class="relative pl-4 pb-4 pt-4 pr-10 border-2 group mt-2 mb-1 border-zinc-800 cursor-pointer shadow-lg rounded-2xl transition duration-300 hover:bg-zinc-900"
     >
       <div class="flex flex-col gap-1">
         <div
