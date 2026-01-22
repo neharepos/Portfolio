@@ -8,7 +8,7 @@ const projectData = await queryCollection('project').order('duration', 'DESC').l
 
 
 <template>
-  <div class="bg-[#0a0a0a] relative -mt-2 sm:-mt-2 md:-mt-4">
+  <div class="bg-[#0a0a0a] relative -mt-1 sm:-mt-1 md:-mt-1">
     <div>
       <div
         class="hidden md:block absolute inset-0 z-0 opacity-20 pointer-events-none"

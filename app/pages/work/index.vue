@@ -6,7 +6,7 @@ const allPosts = await queryCollection('work').order('startDate', 'DESC').all()
 <template>
     <div class="bg-[#0a0a0a] min-h-screen ">
       
-        <div class="container mx-auto px-8 md:px-12 lg:px-18 max-w-6xl py-10 ">
+        <div class="container mx-auto px-8 md:px-12 lg:px-18 max-w-6xl py-10">
         <ElementsHeading 
       heading="Work" 
       description="Things I have written recently" />

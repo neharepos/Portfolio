@@ -34,6 +34,7 @@ const duration = computed(
     <div
       v-if="!isLast"
       class="absolute left-7 top-10 h-full w-px bg-zinc-700"
+      style="height: calc(100% - (-1rem));"
     ></div>
     <div class="absolute left-5 top-5 z-10">
       <span
@@ -47,7 +48,7 @@ const duration = computed(
    
 
     <div
-      class="relative pl-4 pb-4 pt-4 pr-10 border-2 group mt-2 mb-1 border-zinc-800 cursor-pointer shadow-lg rounded-2xl transition duration-300 hover:bg-zinc-900"
+      class="relative pl-4 pb-4 pt-4 pr-10 border-2 group border-zinc-800 cursor-pointer shadow-lg rounded-2xl transition duration-300 hover:bg-zinc-900"
     >
       <div class="flex flex-col gap-1">
         <div
@@ -77,7 +78,7 @@ const duration = computed(
           {{ description }}
         </p>
 
-        <div class="flex flex-wrap gap-2 mt-5">
+        <div class="flex flex-wrap gap-2 mt-3">
           <span
             v-for="(skill, index) in skills"
             :key="skill"

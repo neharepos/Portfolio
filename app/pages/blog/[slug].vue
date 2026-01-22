@@ -41,7 +41,7 @@ const visibleTags = computed(() => {
       </p>
 
       <div class="text-gray-600 mb-4 text-sm font-mono">
-        {{ post.date }}
+        {{ (post.date) }}
       </div>
 
       <div class="flex flex-wrap gap-2 mt-4 mb-5">
