@@ -97,7 +97,7 @@ onUnmounted(() => {
                 <div class="space-y-2">
                     <div class="flex flex-wrap items-center gap-3">
                         <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight">
-                            Neha<span class="text-white md:text-zinc-400">Keshri</span>
+                            Neha<span class="text-white ml-2 md:text-zinc-400">Keshri</span>
                         </h1>
                         <BadgeCheck class="w-6 h-6 md:w-8 md:h-8 text-blue-500 fill-blue-500/10" />
                         <button class="p-2 rounded-full hover:bg-zinc-800 text-zinc-500 hover:text-white transition-colors">

@@ -14,6 +14,13 @@ const allPosts = await queryCollection('project').order('duration', 'DESC').all(
 </div>
 
       <div class="flex p-4 -mt-15 flex-col items-center">
+        <NuxtLink
+        v-for="project in allPosts"
+        :key="project.path"
+        :to="project.path"
+        class="w-full max-w-xl group"
+      >
+        
         <ElementsProjectCard
           v-for="(project, index) in allPosts"
           :key="index"
@@ -29,6 +36,7 @@ const allPosts = await queryCollection('project').order('duration', 'DESC').all(
           v-bind="project"
           class="w-full max-w-3xl"
         />
+        </NuxtLink>
         </div>
   </div>
 </template>
