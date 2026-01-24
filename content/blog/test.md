@@ -1,5 +1,5 @@
 ---
-date: 28-12-2025
+date: 2023-02-23
 title: "Understanding Vue 3"
 description: "A beginner-friendly guide to Vue 3 and Composition API."
 tags: ["abc", "gfd", "yui"]

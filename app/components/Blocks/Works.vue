@@ -14,7 +14,7 @@ const workData = await queryCollection('work').order('startDate', 'DESC').limit(
       style="background-image: radial-gradient(#3f3f46 1px, transparent 1px); background-size: 24px 24px;"
     ></div>
 
-    <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8">
+    <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8 md:pb-10">
       <Heading 
         heading="Work" 
         description="Things I have worked upon" 

@@ -27,7 +27,7 @@ const visibleTags = computed(() => {
 <template>
   <div
     v-if="post"
-    class="min-h-screen bg-[#0a0a0a] text-gray-300 px-4 py-10 sm:px-6"
+    class="min-h-screen bg-[#0a0a0a] text-gray-300 px-4 pt-22 pb-20 sm:px-6"
   >
     <article class="mx-auto max-w-3xl">
       <h1 class="text-3xl md:text-4xl font-bold mb-5 text-white">

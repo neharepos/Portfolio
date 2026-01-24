@@ -21,7 +21,7 @@ const handleSubmit = () => {
 
 <template>
   <section id="contact-form">
-  <div class="bg-[#0a0a0a] px-16 sm:px-19 mt-5">
+  <div class="bg-[#0a0a0a] px-16 md:py-8 sm:px-19 mt-5">
   <div class="max-w-2xl mx-auto p-12 bg-[#0a0a0a] border-2  border-zinc-800  group-hover:w-full transition-all duration-500 rounded-2xl backdrop-blur-sm shadow-xl">
     <h2 class="text-3xl font-bold text-white mb-2 font-poppins">Get in touch</h2>
     <p class="text-gray-400 mb-8">Have a project in mind? Let's build something together.</p>

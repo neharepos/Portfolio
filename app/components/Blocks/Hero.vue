@@ -75,7 +75,7 @@ onUnmounted(() => {
                 <!-- Avatar Circle -->
                 <div class="relative w-28 h-28 md:w-40 md:h-40 rounded-full border-4 border-[#1c1c1e] md:border-zinc-800 md:bg-zinc-900/50 overflow-hidden shadow-2xl">
                     <ElementsAvatar 
-                        path="/profile/profile-pic1.png" 
+                        path="/profile/profile-pic2.png" 
                         class="w-full h-full object-cover"
                     />
                 </div>
@@ -140,11 +140,11 @@ onUnmounted(() => {
                         </div>
                         <div class="flex items-center gap-3 hover:text-white transition-colors cursor-pointer group">
                             <Mail class="w-4 h-4 text-zinc-600 group-hover:text-yellow-500" />
-                            <a href="mailto:nishaantkrsingh@gmail.com"><span>nehakeshri12c@gmail.com</span></a>
+                            <a href="mailto:nehakeshri12c@gmail.com"><span>nehakeshri12c@gmail.com</span></a>
                         </div>
                         <div class="flex items-center gap-3 hover:text-white transition-colors cursor-pointer group">
                             <Globe class="w-4 h-4 text-zinc-600 group-hover:text-blue-500" />
-                            <a href="https://nishsingh.in"><span>neha.in</span></a>
+                            <a href="https://neha.in"><span>neha.in</span></a>
                         </div>
                         <div class="flex items-center gap-3">
                             <Mars class="w-4 h-4 text-zinc-600" />
@@ -204,7 +204,7 @@ onUnmounted(() => {
                         <div class="font-mono text-sm text-zinc-200">nehakeshri12c@gmail.com</div>
                     </a>
 
-                    <a href="https://nishsingh.in" class="flex items-center gap-4 group">
+                    <a href="https://neha.in" class="flex items-center gap-4 group">
                         <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1c1c1e] border border-zinc-800 text-zinc-400 group-hover:text-white group-hover:border-zinc-600 transition-colors">
                             <Globe class="w-5 h-5" />
                         </div>

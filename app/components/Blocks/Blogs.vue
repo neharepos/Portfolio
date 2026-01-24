@@ -40,11 +40,12 @@ const blogData = await queryCollection('blog').order('date', 'DESC').limit(4).al
       style="background-image: radial-gradient(#3f3f46 1px, transparent 1px); background-size: 24px 24px;"
     ></div>
 
-    <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8">
+    <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8 md:pb-10">
       
       <Heading
         heading="Blogs"
         description="Things I have written recently"
+        class="mb-8"
       />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">

@@ -44,7 +44,7 @@ const projectData = await queryCollection('project').order('duration', 'DESC').l
         <div class="mt-8 flex justify-start">
           <NuxtLink 
             to="/project" 
-            class="border px-6 ml-5 py-2 mb-8 border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 rounded-xl transition-all cursor-pointer inline-block"
+            class="border px-6 ml-7 py-2 mb-8 border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 rounded-xl transition-all cursor-pointer inline-block"
           >
             View all projects
           </NuxtLink>
