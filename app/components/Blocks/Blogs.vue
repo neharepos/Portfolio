@@ -48,11 +48,17 @@ const blogData = await queryCollection('blog').order('date', 'DESC').limit(4).al
       />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+        <NuxtLink
+          v-for="blog in blogData"
+          :key="blog.path"
+          :to="blog.path"
+          class="group block transition-transform hover:scale-[1.01]"
+        >
         <Cards
-          v-for="(blog, index) in blogData"
-          :key="index"
           v-bind="blog" 
+          class="h-full"
         />
+        </NuxtLink>
       </div>
 
       <!-- <div class="mt-10 flex justify-start sm:justify-start">

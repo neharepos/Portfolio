@@ -14,29 +14,30 @@ const tagColors = [
 
 <template>
   <div class="bg-[#0a0a0a] min-h-screen">
-    <div class="container mx-auto px-2 md:px-12 lg:px-30 xl:px-85 py-15">
+    <div class="max-w-xl mx-auto px-1 py-18">
+      
       <ElementsHeading
         heading="Blogs"
         description="Things I have written recently"
+        class="mb-10" 
       />
-    </div>
-    <div class="p-4 -mt-10 flex flex-col items-center gap-6">
-      <NuxtLink
-        v-for="blog in allPosts"
-        :key="blog.path"
-        :to="blog.path"
-        class="w-full max-w-xl group"
-      >
-        <ElementsCards
+
+      <div class="flex flex-col gap-6">
+        <NuxtLink
           v-for="blog in allPosts"
-          :key="index"
-          :title="blog.title"
-          :date="blog.date"
-          :description="blog.description"
-          :tags="blog.tags"
-          class="w-full max-w-xl"
-        />
-      </NuxtLink>
+          :key="blog.path"
+          :to="blog.path"
+          class="group block"
+        >
+          <ElementsCards
+            :title="blog.title"
+            :date="blog.date"
+            :description="blog.description"
+            :tags="blog.tags"
+          />
+        </NuxtLink>
+      </div>
+      
     </div>
   </div>
 </template>

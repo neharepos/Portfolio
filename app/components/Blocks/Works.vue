@@ -22,12 +22,17 @@ const workData = await queryCollection('work').order('startDate', 'DESC').limit(
       />
 
       <div class="flex flex-col gap-8">
-        <WorkCard
+        <NuxtLink
           v-for="(work, index) in workData"
-          :key="index"
-          v-bind="work"
-          :isLast="index === workData.length - 1"
-        />
+          :key="work.path || index"
+          :to="work.path" 
+          class="group block transition-all hover:translate-x-1"
+        >
+          <WorkCard
+            v-bind="work"
+            :isLast="index === workData.length - 1"
+          />
+        </NuxtLink>
       </div>
 
       <!-- <div class="mt-10 flex justify-start sm:justify-start">

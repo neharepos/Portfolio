@@ -24,41 +24,32 @@ const projectData = await queryCollection('project').order('duration', 'DESC').l
           description="Things I have written recently"
           class="mb-8"
         />
-        <ProjectCard
-          v-for="(project, index) in projectData"
-          :key="index"
-          :title="project.title"
-          :description="project.description"
-          :Date="project.Date"
-          :tags="project.tags"
-          :status="project.status"
-          :role="project.role"
-          :duration="project.duration"
-          :github="project.github"
-          :live="project.live"
-        />
+        
+        <div class="flex flex-col gap-6">
+          <NuxtLink
+            v-for="(project, index) in projectData"
+            :key="index"
+            :to="project.path"
+            class="group block transition-all hover:translate-y-[-2px]"
+          >
+            <ProjectCard
+              v-bind="project"
+              :Date="project.Date" 
+            />
+          </NuxtLink>
+        </div>
       </div>
       
-      <!-- <div class="mt-8 flex justify-start sm:justify-start">
-         <button class="border px-6 ml-15 py-2 mb-8 border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 rounded-xl transition-all cursor-pointer">
-           View all projects
-         </button>
-      </div> -->
-
-    <div class="mx-auto max-w-6xl px-4 sm:px-8">
-  
-  <div class="mt-8 flex justify-start">
-    <NuxtLink 
-      to="/project" 
-      class="border px-6 ml-5 py-2 mb-8 border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 rounded-xl transition-all cursor-pointer inline-block"
-    >
-      View all projects
-    </NuxtLink>
-  </div>
-
-</div>
-    
-    
+      <div class="mx-auto max-w-6xl px-4 sm:px-8">
+        <div class="mt-8 flex justify-start">
+          <NuxtLink 
+            to="/project" 
+            class="border px-6 ml-5 py-2 mb-8 border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 rounded-xl transition-all cursor-pointer inline-block"
+          >
+            View all projects
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </div>
 </template>

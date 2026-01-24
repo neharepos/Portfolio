@@ -4,37 +4,35 @@ const allPosts = await queryCollection('work').order('startDate', 'DESC').all()
 </script>
 
 <template>
-    <div class="bg-[#0a0a0a] min-h-screen ">
+  <div class="bg-[#0a0a0a] min-h-screen">
+    <div class="max-w-xl mx-auto px-6 md:px-8 py-18">
       
-        <div class="container mx-auto px-8 md:px-12 lg:px-18 max-w-6xl py-15 ">
-        <ElementsHeading 
-      heading="Work" 
-      description="Things I have written recently" />
-      </div>
+      <ElementsHeading 
+        heading="Work" 
+        description="Things I have written recently" 
+        class="mb-10"
+      />
 
-      <div class="p-4 flex flex-col -mt-12 items-center">
-      <NuxtLink
-        v-for="project in allPosts"
-        :key="project.path"
-        :to="project.path"
-        class="w-full max-w-xl group"
-      >
-      <ElementsWorkCard
+      <div class="flex flex-col gap-6">
+        <NuxtLink
           v-for="(work, index) in allPosts"
-          :key="index"
-          :company="work.company"
-          :role="work.role"
-          :location="work.location"
-          :startDate="work.startDate"
-          :endDate="work.endDate"
-          :description="work.description"
-          :skills="work.skills"
-          v-bind="work"
-          :isLast="index === allPosts.length - 1"
-          class="w-full max-w-3xl"
-        />
+          :key="work.path"
+          :to="work.path"
+          class="block group"
+        >
+          <ElementsWorkCard
+            :company="work.company"
+            :role="work.role"
+            :location="work.location"
+            :startDate="work.startDate"
+            :endDate="work.endDate"
+            :description="work.description"
+            :skills="work.skills"
+            v-bind="work"
+            :isLast="index === allPosts.length - 1"
+          />
         </NuxtLink>
-        </div>
+      </div>
     </div>
-
+  </div>
 </template>
