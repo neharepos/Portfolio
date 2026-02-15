@@ -1,11 +1,21 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-
+  compatibilityDate: '2025-12-16',
   vite: {
     plugins: [
       tailwindcss(),
     ],
+  },
+
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: true,
+      crawlLinks: true
+    },
+    externals: {
+      inline: ['@nuxt/nitro-server', 'better-sqlite3']
+    }
   },
 
   css: [
@@ -15,8 +25,11 @@ export default defineNuxtConfig({
   ],
   modules: ['@nuxt/content', '@nuxtjs/color-mode'],
   content: {
+    database: {
+      type: 'sqlite'
+    },
     build: {
-      
+
       markdown: {
         // Add remark plugin to parse $...$ and $$...$$ math syntax
         remarkPlugins: {
