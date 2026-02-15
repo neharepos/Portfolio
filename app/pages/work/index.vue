@@ -5,7 +5,7 @@ const allPosts = await queryCollection('work').order('startDate', 'DESC').all()
 
 <template>
   <div class="bg-[#0a0a0a] min-h-screen">
-    <div class="max-w-xl mx-auto px-6 md:px-8 py-18">
+    <div class="max-w-4xl mx-auto px-6 md:px-8 py-18">
       
       <ElementsHeading 
         heading="Work" 

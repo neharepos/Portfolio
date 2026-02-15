@@ -48,7 +48,7 @@ const duration = computed(
    
 
     <div
-      class="relative pl-4 pb-4 pt-4 pr-10 border-2 group border-zinc-800 cursor-pointer shadow-lg rounded-2xl transition duration-300 hover:bg-zinc-900"
+      class="relative pl-4 pb-4 pt-4 pr-10 border-2 border-zinc-800 rounded-2xl transition duration-300 hover:bg-zinc-900"
     >
       <div class="flex flex-col gap-1">
         <div
@@ -56,7 +56,7 @@ const duration = computed(
         >
           <div>
             <h3
-              class="text-2xl font-bold text-zinc-100 tracking-tight leading-none"
+              class="text-2xl font-poppins font-bold text-zinc-100 tracking-tight leading-none"
             >
               {{ role }}
             </h3>
@@ -68,13 +68,13 @@ const duration = computed(
           </div>
 
           <div
-            class="text-sm font-mono text-zinc-500 bg-zinc-800/50 px-3 py-1 rounded-full border border-zinc-600/50 self-start"
+            class="text-sm font-mono text-zinc-500 bg-zinc-800/50 px-3 md:min-w-55 py-1 rounded-full border border-zinc-600/50 self-start"
           >
             {{ duration }}
           </div>
         </div>
 
-        <p class="mt-4 text-gray-400 font-quicksand leading-relaxed max-w-2xl">
+        <p class="mt-4 text-gray-400 font-quicksand leading-relaxed max-w-4xl">
           {{ description }}
         </p>
 
@@ -83,7 +83,7 @@ const duration = computed(
             v-for="(skill, index) in skills"
             :key="skill"
             :class="[
-              'px-3 py-1 text-[11px] uppercase tracking-wider font-semibold border rounded-md transition-all cursor-default',
+              'px-3 py-1 text-[11px] uppercase tracking-wider  font-mono font-semibold border rounded-md transition-all cursor-default',
               tagColors[index % tagColors.length],
             ]"
           >

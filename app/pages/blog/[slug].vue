@@ -30,13 +30,13 @@ const visibleTags = computed(() => {
     class="min-h-screen bg-[#0a0a0a] text-gray-300 px-4 pt-22 pb-20 sm:px-6"
   >
     <article class="mx-auto max-w-3xl">
-      <h1 class="text-3xl md:text-4xl font-bold mb-5 text-white">
+      <h1 class="text-3xl font-poppins md:text-4xl font-bold mb-5 text-white">
         {{ post.title }}
       </h1>
 
       <ElementsPic class="mx-auto" />
 
-      <p class="text-gray-500 mt-5 text-lg italic">
+      <p class="text-gray-500 mt-5 font-quicksand text-lg">
         {{ post.description }}
       </p>
 
@@ -44,7 +44,7 @@ const visibleTags = computed(() => {
         {{ (post.date) }}
       </div>
 
-      <div class="flex flex-wrap gap-2 mt-4 mb-5">
+      <div class="flex flex-wrap gap-2 mt-4 mb-5 font-mono">
         <span
           v-for="(tag, index) in visibleTags"
           :key="index"

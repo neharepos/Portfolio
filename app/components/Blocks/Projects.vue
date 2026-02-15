@@ -18,7 +18,7 @@ const projectData = await queryCollection('project').order('duration', 'DESC').l
         "
       ></div>
 
-      <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-8">
+      <div class="relative z-10 mx-auto max-w-6xl px-4 sm:px-8">
         <Heading
           heading="Projects"
           description="Things I have written recently"

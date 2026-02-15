@@ -105,7 +105,7 @@ onUnmounted(() => {
                         </button>
                     </div>
                     
-                    <p class="text-lg text-zinc-400 font-medium font-mono md:font-sans">
+                    <p class="text-lg text-zinc-400 font-medium font-mono">
                         Open Source Contributor
                     </p>
                 </div>
@@ -114,7 +114,7 @@ onUnmounted(() => {
                 <div class="hidden md:block">
                     <div class="h-px w-full bg-zinc-800/60 mb-6"></div>
                     
-                    <div class="space-y-3 mb-4">
+                    <div class="space-y-3 mb-4 font-mono">
                         <div class="flex items-center gap-3 text-zinc-300">
                             <Code2 class="w-5 h-5 text-zinc-500" />
                             <span>Web Development<span class="text-zinc-500">@Company</span></span>
@@ -125,7 +125,7 @@ onUnmounted(() => {
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-sm text-zinc-400">
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-sm text-zinc-400 font-mono">
                         <div class="flex items-center gap-3">
                             <MapPin class="w-4 h-4 text-zinc-600" />
                             <span>Ranchi, India</span>

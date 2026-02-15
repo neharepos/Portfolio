@@ -39,7 +39,7 @@ const extraCount = computed(() => {
     <div
       class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full transition duration-300 hover:bg-zinc-900 backdrop-blur-md rounded-2xl p-5 cursor-pointer shadow-lg group border-zinc-800 border-2"
     >
-      <h2 class="font-bold font-sans text-lg sm:text-xl text-white font-poppins">
+      <h2 class="font-bold font-poppins text-lg sm:text-xl text-white">
         {{ title }}
       </h2>
 
@@ -55,7 +55,7 @@ const extraCount = computed(() => {
         <span
           v-for="(tag, index) in visibleTags"
           :key="index"
-          :class="['text-xs px-3 py-1 rounded-full border', getTagColor(index)]"
+          :class="['text-xs font-mono px-3 py-1 rounded-full border', getTagColor(index)]"
         >
           {{ tag }}
         </span>

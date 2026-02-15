@@ -11,8 +11,8 @@
                     />
                 </div>
     <div class="">
-        <h1 class="text-lg text-gray-300">Neha Keshri</h1>
-        <h1 class="text-lg text-gray-300">Web Developer</h1>
+        <h1 class="text-lg text-gray-300 font-mono">Neha Keshri</h1>
+        <h1 class="text-lg text-gray-300 font-mono">Web Developer</h1>
     </div>
     
     </div>

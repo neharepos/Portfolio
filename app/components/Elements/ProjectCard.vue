@@ -33,7 +33,7 @@ const tagColors = [
           <div>
             <div class="flex items-center gap-3">
               <h2
-                class="text-2xl font-bold text-white tracking-tight transition-colors"
+                class="text-2xl font-bold font-poppins text-white tracking-tight transition-colors"
               >
                 {{ title }}
               </h2>

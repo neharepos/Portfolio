@@ -32,13 +32,13 @@ const visibleTags = computed(() => {
     class="min-h-screen bg-[#0a0a0a] text-gray-300 px-4 pt-22 pb-20 sm:px-6"
   >
     <article class="mx-auto max-w-3xl">
-      <h1 class="text-3xl md:text-4xl font-bold mb-5 text-white">
+      <h1 class="text-3xl md:text-4xl font-bold font-poppins mb-5 text-white">
         {{ post.company }}
       </h1>
 
       <ElementsPic class="mx-auto" />
 
-      <p class="text-gray-500 mt-5 text-lg italic">
+      <p class="text-gray-500 mt-5 text-lg font-quicksand">
         {{ post.description }}
       </p>
 
