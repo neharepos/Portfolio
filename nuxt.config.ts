@@ -10,12 +10,13 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      autoSubfolderIndex: true,
-      crawlLinks: true
-    },
-    externals: {
-      inline: ['@nuxt/nitro-server', 'better-sqlite3']
+      crawlLinks: true,
+      routes: ['/'] // This tells Nitro to start at home and follow all links to content
     }
+  },
+  routeRules: {
+    // This ensures your content queries are cached and treated as static
+    '/__nuxt_content/**': { prerender: true }
   },
 
   css: [
