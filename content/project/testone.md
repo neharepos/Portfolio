@@ -7,6 +7,5 @@ status: "completed"
 role: "Stygyugyu"
 duration: "5 Months"
 github: "https://github.com/nish"
-live: "working"
 ---
 lorem12

@@ -7,7 +7,6 @@ status: "completed"
 role: "Stygyugyu"
 duration: "2 Months"
 github: "https://github.com/nish"
-live: "working"
 ---
 
 # The Practical Use of Artificial Intelligence in Everyday Life

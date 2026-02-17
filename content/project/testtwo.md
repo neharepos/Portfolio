@@ -7,7 +7,6 @@ status: "completed"
 role: "Software developer"
 duration: "5 Months"
 github: "https://github.com/neha"
-live: "working"
 ---
 
 # Hey All
