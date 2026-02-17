@@ -40,7 +40,7 @@ export default defineContentConfig({
         role: z.string().optional(), 
         duration: z.string().optional(), 
         github: z.string().url().optional(), 
-        live: z.string().url().optional(),
+        live: z.string().optional(),
       }),
     }),
   },
