@@ -6,7 +6,7 @@ tags: ["abc", "gfd", "yui"]
 status: "completed"
 role: "Stygyugyu"
 duration: "2 Months"
-github: "https://github/nish"
+github: "https://github.com/nish"
 live: "working"
 ---
 

@@ -6,7 +6,7 @@ tags: ["react", "gfvvd", "yuin"]
 status: "working"
 role: "Software developer"
 duration: "5 Months"
-github: "https//github/neha"
+github: "https://github.com/neha"
 live: "working"
 ---
 
