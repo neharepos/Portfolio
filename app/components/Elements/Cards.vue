@@ -29,6 +29,16 @@ const visibleTags = computed(() => {
   return props.tags.slice(0, 2);
 });
 
+const show_desc = computed(() => {
+  const limit = 20
+  const words = props.description.split(' ')
+  if (words.length > limit){
+    const truncated = words.slice(0, limit).join(' ');
+    return truncated + "..."
+  } 
+  return props.description
+})
+
 const extraCount = computed(() => {
   return Math.max(props.tags.length - 2, 0);
 });
@@ -48,7 +58,7 @@ const extraCount = computed(() => {
       </h3>
 
       <p class="text-gray-400 mt-3 font-quicksand">
-        {{ description }}
+        {{ show_desc }}
       </p>
 
       <div class="flex flex-wrap gap-2 mt-4">

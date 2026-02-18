@@ -100,9 +100,6 @@ onUnmounted(() => {
                             Neha<span class="text-white ml-2 md:text-zinc-400">Keshri</span>
                         </h1>
                         <BadgeCheck class="w-6 h-6 md:w-8 md:h-8 text-blue-500 fill-blue-500/10" />
-                        <button class="p-2 rounded-full hover:bg-zinc-800 text-zinc-500 hover:text-white transition-colors">
-                            <Volume2 class="w-5 h-5" />
-                        </button>
                     </div>
                     
                     <p class="text-lg text-zinc-400 font-medium font-mono">
@@ -117,7 +114,7 @@ onUnmounted(() => {
                     <div class="space-y-3 mb-4 font-mono">
                         <div class="flex items-center gap-3 text-zinc-300">
                             <Code2 class="w-5 h-5 text-zinc-500" />
-                            <span>Web Development<span class="text-zinc-500">@Company</span></span>
+                            <span>Full-stack Developer<span class="text-zinc-500"><a href="https://codestam.com">@Codestam-Technologies</a></span></span>
                         </div>
                         <div class="flex items-center gap-3 text-zinc-300">
                             <Lightbulb class="w-5 h-5 text-zinc-500" />

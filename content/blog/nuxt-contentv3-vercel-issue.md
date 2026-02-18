@@ -2,7 +2,7 @@
 date: 2025-12-23
 title: "Deploying Nuxt Content v3 on Vercel: The `better-sqlite3` Trap"
 description: "While deployment of a project made in NUXT4 with NUXT Content v3, I ran into an issue where it was running perfectly fine in localhost but when I deployed it on vercel, I was faced with an error which I wasn't able to solve for a good amount of time. So in this blog I have documented how I solved that error and finally deployed my project."
-tags: ["devlog", "nuxt", "nuxt content", "vercel"]
+tags: ["devlog", "nuxt", "nuxt content", "vercel", "issue"]
 ---
 
 <!-- # Deploying Nuxt Content v3 on Vercel: The `better-sqlite3` Trap -->
