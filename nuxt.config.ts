@@ -2,6 +2,11 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
 
+  runtimeConfig: {
+    googleScriptUrl: process.env.GOOGLE_SCRIPT_URL,
+    googleScriptSecret: process.env.GOOGLE_SCRIPT_SECRET
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
