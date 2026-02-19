@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
 
 // Define expected props, optionally with type validation
 const props = defineProps({
