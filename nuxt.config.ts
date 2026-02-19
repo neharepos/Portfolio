@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     '/work/**': { prerender: true },
     '/project': { prerender: true },
     '/project/**': { prerender: true },
-    '/resume': { prerender: true },
     
     // Keep API routes as serverless functions
     '/api/**': { cors: true }, // Optional: enable CORS if needed
