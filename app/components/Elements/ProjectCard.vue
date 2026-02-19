@@ -19,6 +19,28 @@ const tagColors = [
   "bg-amber-500/20 text-amber-300 border-amber-500/30",
   "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
 ];
+
+const getTagColor = (index) => {
+  return tagColors[index % tagColors.length];
+};
+
+const visibleTags = computed(() => {
+  return props.tags.slice(0, 2);
+});
+
+const extraCount = computed(() => {
+  return Math.max(props.tags.length - 2, 0);
+});
+
+const show_desc = computed(() => {
+  const limit = 20
+  const words = props.description.split(' ')
+  if (words.length > limit){
+    const truncated = words.slice(0, limit).join(' ');
+    return truncated + "..."
+  } 
+  return props.description
+})
 </script>
 
 <template>
@@ -116,20 +138,26 @@ const tagColors = [
         </div>
 
         <p class="text-gray-400 font-quicksand leading-relaxed max-w-3xl mt-2">
-          {{ description }}
+          {{ show_desc }}
         </p>
 
         <div class="flex flex-wrap gap-2 mt-4">
           <span
-            v-for="(tag, index) in tags"
+            v-for="(tag, index) in visibleTags"
             :key="index"
             :class="[
               'px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider border rounded-md transition-all duration-300',
-              tagColors[index % tagColors.length],
+              getTagColor(index)
             ]"
           >
             {{ tag }}
           </span>
+          <span
+          v-if="extraCount > 0"
+          class="text-xs px-3 py-1 rounded-full bg-zinc-700 text-gray-300 border border-zinc-600 cursor-pointer"
+        >
+          +{{ extraCount }}
+        </span>
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
 import { 
-    BadgeCheck, 
-    Volume2, 
+    BadgeCheck,
     Code2, 
     Lightbulb, 
     MapPin, 

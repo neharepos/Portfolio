@@ -5,7 +5,7 @@ location: "Patna"
 startDate: "2024-02-11"
 endDate: "2024-05-12"
 description: "A beginner-friendly guide to Vue 3 and Composition API."
-skills: ["abc", "gfd", "yui"]
+skills: ["abc", "gfd", "yui", "react"]
 ---
 # test file
 lorm24

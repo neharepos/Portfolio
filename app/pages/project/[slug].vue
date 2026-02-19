@@ -19,8 +19,12 @@ const getTagColor = (index) => {
   return tagColors[index % tagColors.length];
 };
 
+const tags_len = computed(()=>{
+  post.value.tags
+})
+
 const visibleTags = computed(() => {
-  return post.value?.tags?.slice(0, 2) || [];
+  return post.value?.tags?.slice(0, tags_len.value) || [];
 });
 </script>
 

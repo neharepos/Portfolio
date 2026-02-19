@@ -23,6 +23,9 @@ const tagColors = [
   "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
   "bg-red-500/20 text-red-300 border-red-500/30",
 ];
+const getTagColor = (index) => {
+  return tagColors[index % tagColors.length];
+};
 
 const duration = computed(
   () => `${props.startDate} — ${props.endDate || "Present"}`
@@ -43,9 +46,6 @@ const duration = computed(
         <span class="w-2 h-2 rounded-full bg-black"></span>
       </span>
     </div>
-
-    
-   
 
     <div
       class="relative pl-4 pb-4 pt-4 pr-10 border-2 border-zinc-800 rounded-2xl transition duration-300 hover:bg-zinc-900"
@@ -84,7 +84,7 @@ const duration = computed(
             :key="skill"
             :class="[
               'px-3 py-1 text-[11px] uppercase tracking-wider  font-mono font-semibold border rounded-md transition-all cursor-default',
-              tagColors[index % tagColors.length],
+              getTagColor(index)
             ]"
           >
             {{ skill }}
