@@ -19,6 +19,8 @@ useSeoMeta({
   description: post.value.description,
   ogTitle: post.value.title,
   ogDescription: post.value.description,
+  ogImage: '/og-image.png',
+  twitterCard: 'summary_large_image',
 });
 
 // ─── Tag Colors ──────────────────────────────────────────────────────────────

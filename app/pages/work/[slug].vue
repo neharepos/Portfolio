@@ -24,6 +24,14 @@ const visibleTags = computed(() => {
   return post.value?.tags?.slice(0, 2) || [];
 });
 
+useSeoMeta({
+  title: () => `${post.value.role} at ${post.value.company}`,
+  description: post.value.description,
+  ogTitle: () => `${post.value.role} at ${post.value.company}`,
+  ogDescription: post.value.description,
+  ogImage: '/og-image.png',
+  twitterCard: 'summary_large_image',
+});
 </script>
 
 <template>

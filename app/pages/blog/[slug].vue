@@ -19,7 +19,25 @@ useSeoMeta({
   description: post.value.description,
   ogTitle: post.value.title,
   ogDescription: post.value.description,
+  ogType: 'article',
+  articlePublishedTime: post.value.date,
+  articleTag: post.value.tags,
 });
+
+useSchemaOrg([
+  defineArticle({
+    headline: post.value.title,
+    description: post.value.description,
+    image: '/og-image.png', // Fallback or dynamic if added later
+    datePublished: post.value.date,
+    author: [
+      {
+        name: 'Neha Keshri',
+        url: 'https://nehakeshri.in',
+      },
+    ],
+  }),
+])
 
 // ─── Tag Colors ──────────────────────────────────────────────────────────────
 const tagColors = [

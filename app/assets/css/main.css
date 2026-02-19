@@ -194,7 +194,7 @@
   /* ─── Code Blocks (Shiki via Nuxt Content v3) ────────────────────── */
   .content pre {
     @apply !bg-transparent font-medium text-sm leading-6 
-           p-2 mt-2 mb-2 rounded-lg w-full lg:w-3/4 
+           p-2 mt-2 mb-2 rounded-lg w-full lg:w-3/4
            overflow-x-auto relative;
   }
 

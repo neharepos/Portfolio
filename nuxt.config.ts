@@ -13,10 +13,16 @@ export default defineNuxtConfig({
     'katex/dist/katex.min.css',
     './app/assets/css/main.css'
   ],
-  modules: ['@nuxt/content', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/content', '@nuxtjs/color-mode', '@nuxtjs/seo'],
+  site: {
+    url: 'https://nehakeshri.in',
+    name: 'Neha Keshri - Portfolio',
+    description: 'Portfolio of Neha Keshri, a developer and blogger.',
+    defaultLocale: 'en',
+  },
   content: {
     build: {
-      
+
       markdown: {
         // Add remark plugin to parse $...$ and $$...$$ math syntax
         remarkPlugins: {

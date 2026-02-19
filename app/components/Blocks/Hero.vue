@@ -74,7 +74,7 @@ onUnmounted(() => {
                 <!-- Avatar Circle -->
                 <div class="relative w-28 h-28 md:w-40 md:h-40 rounded-full border-4 border-[#1c1c1e] md:border-zinc-800 md:bg-zinc-900/50 overflow-hidden shadow-2xl">
                     <ElementsAvatar 
-                        path="/profile/profile-pic-4.jpg" 
+                        path="/profile/profile-pic.jpg" 
                         class="w-full h-full object-cover"
                     />
                 </div>
