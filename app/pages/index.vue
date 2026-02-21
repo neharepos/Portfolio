@@ -8,3 +8,9 @@
     <ElementsFooter />
   </div>
 </template>
+
+<script setup>
+useSeoMeta({
+  title: 'Home' 
+})
+</script>

@@ -1,7 +1,7 @@
 ---
 title: "Fixing Prisma v6.15 Postgres Adapter Issue in Next.js"
 description: "How I debugged and fixed a misleading Prisma ORM error in my Next.js project by manually installing the correct Postgres adapter version."
-tags: ["prisma", "nextjs", "postgresql", "debugging", "devlog"]
+tags: ["prisma", "nextjs", "postgresql", "issue", "devlog"]
 date: 2026-02-19
 ----------------
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  titleTemplate: '%s - Neha Keshri',
+  titleTemplate: '%s | Neha Keshri',
   ogImage: '/og-image.png', // Ensure this file exists in public/ or update path
   twitterCard: 'summary_large_image',
 })
