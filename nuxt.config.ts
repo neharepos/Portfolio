@@ -12,6 +12,11 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  nitro: {
+    prerender: {
+      crawlLinks: true
+    }
+  },
   
   routeRules: {
     // Pre-render all content pages at build time (no SQLite at runtime)
