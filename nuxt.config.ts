@@ -20,13 +20,13 @@ export default defineNuxtConfig({
   
   routeRules: {
     // Pre-render all content pages at build time (no SQLite at runtime)
-    // '/': { prerender: true },
-    // '/blog': { prerender: true },
-    // '/blog/**': { prerender: true },
-    // '/work': { prerender: true },
-    // '/work/**': { prerender: true },
-    // '/project': { prerender: true },
-    // '/project/**': { prerender: true },
+    '/': { prerender: true },
+    '/blog': { prerender: true },
+    '/blog/**': { prerender: true },
+    '/work': { prerender: true },
+    '/work/**': { prerender: true },
+    '/project': { prerender: true },
+    '/project/**': { prerender: true },
     
     // Keep API routes as serverless functions
     '/api/**': { cors: true }, // Optional: enable CORS if needed
